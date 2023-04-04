@@ -6,6 +6,6 @@ export default {
         .setDescription('check if this robot is working'),
     scope: "application",
     async execute(interaction: ChatInputCommandInteraction) {
-        await interaction.editReply('working!');
+        await interaction.editReply(`${interaction.client.user.tag} is worker`);
     },
 };
